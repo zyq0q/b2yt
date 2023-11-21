@@ -49,7 +49,7 @@ def run_cmd(command, vedio_path, b_title):
             	up_data['title'] = v_title
             	up_data['description'] = v_desc
             	up_data['keywords'] = s_tag
-            	up_data['category'] = '24'
+            	up_data['category'] = '22'
             	up_data['privacyStatus'] = 'public'
             	up_data['id'] = v_id
             	up_data['uploader_id'] = uploader_id
@@ -171,18 +171,13 @@ def main(api_url, author, total_pages,cookie):
 save_path = os.getcwd() + '/'
 if __name__ == "__main__":
     # 定义 API URL、作者和总页数
-    api_url = "https://api.bilibili.com/x/space/wbi/arc/search?mid=194024972&ps=30&tid=0&pn=1&keyword=&order=pubdate&platform=web&web_location=1550101&order_avoided=true&dm_img_list=[%7B%22x%22:738,%22y%22:179,%22z%22:0,%22timestamp%22:156,%22type%22:0%7D,%7B%22x%22:907,%22y%22:125,%22z%22:79,%22timestamp%22:332,%22type%22:0%7D]&dm_img_str=V2ViR0wgMS4wIChPcGVuR0wgRVMgMi4wIENocm9taXVtKQ&dm_cover_img_str=QU5HTEUgKEludGVsLCBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKDB4MDAwMDlCNDEpIERpcmVjdDNEMTEgdnNfNV8wIHBzXzVfMCwgRDNEMTEpR29vZ2xlIEluYy4gKEludGVsKQ&w_rid=9c462d83882c62e0a8f4154d6d03c9c6&wts=1699605889"
-    author = ""
+    #api_url = "https://api.bilibili.com/x/space/wbi/arc/search?mid=194024972&ps=30&tid=0&pn=1&keyword=&order=pubdate&platform=web&web_location=1550101&order_avoided=true&dm_img_list=[%7B%22x%22:738,%22y%22:179,%22z%22:0,%22timestamp%22:156,%22type%22:0%7D,%7B%22x%22:907,%22y%22:125,%22z%22:79,%22timestamp%22:332,%22type%22:0%7D]&dm_img_str=V2ViR0wgMS4wIChPcGVuR0wgRVMgMi4wIENocm9taXVtKQ&dm_cover_img_str=QU5HTEUgKEludGVsLCBJbnRlbChSKSBVSEQgR3JhcGhpY3MgKDB4MDAwMDlCNDEpIERpcmVjdDNEMTEgdnNfNV8wIHBzXzVfMCwgRDNEMTEpR29vZ2xlIEluYy4gKEludGVsKQ&w_rid=9c462d83882c62e0a8f4154d6d03c9c6&wts=1699605889"
+    api_url = "https://api.bilibili.com/x/space/wbi/arc/search?mid=1610756043&ps=30&tid=0&pn=1&keyword=&order=pubdate&platform=web&web_location=1550101&order_avoided=true&dm_img_list=[%7B%22x%22:2751,%22y%22:218,%22z%22:0,%22timestamp%22:417,%22type%22:0%7D,%7B%22x%22:2811,%22y%22:306,%22z%22:68,%22timestamp%22:520,%22type%22:0%7D]&dm_img_str=V2ViR0wgMS4wIChPcGVuR0wgRVMgMi4wIENocm9taXVtKQ&dm_cover_img_str=QU5HTEUgKEludGVsLCBJbnRlbChSKSBIRCBHcmFwaGljcyA1MzAgKDB4MDAwMDE5MUIpIERpcmVjdDNEMTEgdnNfNV8wIHBzXzVfMCwgRDNEMTEpR29vZ2xlIEluYy4gKEludGVsKQ&w_rid=b69794c0f604ad04dc77b04379b7dcc0&wts=1700571496"
+    author = "基金经理说"
     total_pages = 1  # 你在最前面定义的总页数
     # 定义 Cookie
     cookie = (
-        "b_nut=1656031316; buvid3=63A52786-2439-C710-40E7-7038B3535FC439181infoc; buvid4=62CCB7CC-5181-1A16-1DE3-2C5304D33B0239181-022062408-0bHjNvpdrqQHqPoB61I9wA%3D%3D; buvid_fp=74f668f9d485981f111c4a1d80da3313; CURRENT_FNVAL=4048; rpdid=|(k|kl)lRkY|0J'uY~mJY~Jlk; CURRENT_PID=94c03f90-e31c-11ed-acc2-09d3a3069e7b; i-wanna-go-back=-1; _uuid=BA755DDE-10BA9-6227-31F4-2EA3C8EF66F245991infoc; FEED_LIVE_VERSION=V8; header_theme_version=CLOSE; b_ut=5; innersign=0; b_lsid=ED9AF24A_18BB84740A4; enable_web_push=DISABLE; home_feed_column=4; bp_video_offset_3546391240510141=844871774252302344; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTk4NjUwNDQsImlhdCI6MTY5OTYwNTc4NCwicGx0IjotMX0.ywIsGT9Xn1EBCc4x4YOcQgiPfyuXSar_bscKtoGI8sg; bili_ticket_expires=1699864984; browser_resolution=1218-556; sid=8187a919"
+        "buvid3=D2356365-7F90-8E6B-FFF5-5F071AE4596262399infoc; b_nut=1689487662; _uuid=65CE1E71-CC710-137F-F4D4-B41D6834117962530infoc; CURRENT_FNVAL=4048; rpdid=|(YlmYm|~~u0J'uY)mlu|u)); DedeUserID=30481953; DedeUserID__ckMd5=a3d4ad2e59d2432a; home_feed_column=5; buvid4=1B3A49C3-A322-5A96-32D0-FAC06DE09B8B64542-023071614-ptgsyU6kM0s%2B89szIfcB%2Bg%3D%3D; is-2022-channel=1; CURRENT_QUALITY=80; FEED_LIVE_VERSION=V8; fingerprint=9d5968d97136ce2e6727f7b4b1d70a6d; buvid_fp_plain=undefined; buvid_fp=9d5968d97136ce2e6727f7b4b1d70a6d; bp_video_offset_30481953=865166864819421185; enable_web_push=undefined; header_theme_version=undefined; browser_resolution=2560-1291; PVID=4; b_lsid=B66F1AC7_18BF1F49E18; SESSDATA=d3a43115%2C1716123424%2C14fc4%2Ab2CjBVrbs_eKjE1vjA3dteEMVtLk9DAmdERmICzyTRg0DEY-0bpEOiP2UWad00WgXG9ZESVmtjOFpPZzJJdTk5c09ndTV2QzVDYmRiNS15c3NkUXV3REZudDFzTzZpckxSMllWSUpFMGxvNlRCMXIzR3BpUGx0SXFlMkVJVGdXTjU4WTEyeHk2MzJ3IIEC; bili_jct=051a9faa682e43e5fd97893a99844d4b; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDA4MzA2MjUsImlhdCI6MTcwMDU3MTM2NSwicGx0IjotMX0.fXukUKWvcuMvAk2i8XHmwUTEmMSxtuxN6WHUo5oIEdA; bili_ticket_expires=1700830565; sid=7mm4v39x"
     )
     # 调用主函数
     main(api_url, author, total_pages,cookie)
-
-    
-    
-
-    
-
